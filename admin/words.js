@@ -1,128 +1,27 @@
+/*global systemDictionary:true */
 'use strict';
 
 systemDictionary = {
-	"tab_config": {
-		"en": "Configuration",
-		"de": "Einstellungen"
-	},
-	"tab_setup": {
-		"en": "Setup instructions",
-		"de": "Installationsanleitung"
-	},
-	"tab_info": {
-		"en": "Information",
-		"de": "Informationen"
-	},
-	
-	"tab_http": {
-		"en": "Option 1: ioBroker.cloud / iot (recommended)",
-		"de": "Option 1: ioBroker.cloud / iot (empfohlen)"
-	},
-	"tab_mqtt": {
-		"en": "Option 2: MQTT Server",
-		"de": "Option 2: MQTT Server"
-	},
-	"tab_pictures": {
-		"en": "User Pictures",
-		"de": "Benutzer-Avatare"
-	},
-	
-	"connection_info": {
-		"en": "Connection settings",
-		"de": "Verbindungseinstellungen"
-	},
-	"state": {
-		"en": "State",
-		"de": "State"
-	},
-	"enabled": {
-		"en": "enabled",
-		"de": "aktiviert"
-	},
-	"ip":			{"en": "IP address",		"de": "IP Adresse",					"ru": "IP"},
-	"port":			{"en": "Port",				"de": "Port",						"ru": "Порт"},
-	"username":		{"en": "User",				"de": "Benutzer",					"ru": "Пользователь"},
-	"password":		{"en": "Password",			"de": "Kennwort",					"ru": "Пароль"},
-	"passRepeat":	{"en": "Password (repeat)",	"de": "Kennwort (Wiederholung)",	"ru": "Повтор пароля"},
-	
-	"pictures_info": {
-		"en": "User Pictures",
-		"de": "Benutzer-Avatare"
-	},
-	"picture": {
-		"en": "Picture",
-		"de": "Avatar"
-	},
-	"name": {
-		"en": "User",
-		"de": "Benutzer"
-	},
-	"upload": {
-		"en": "upload",
-		"de": "hochladen"
-	},
-	"delete": {
-		"en": "delete",
-		"de": "löschen"
-	},
-	
-	
-	
-	"other_info": {
-		"en": "Other Settings",
-		"de": "Weitere Einstellungen"
-	},
-	"encryptionKey":	{"en": "Encryption Key for Payload Encryption",	"de": "Passphrase zur Verschlüsselung der Benachrichtigungen"},
-	"togglePassword": {
-		"en": "show / hide password",
-		"de": "Passwort zeigen / vergeben"
-	},
-	"webSocket":	{"en": "Use Websockets",	"de": "Websockets aktivieren"},
-	
-	
-	
-	
-	
-	"Server settings":          {"en": "Server settings",           "de": "Server settings",        "ru": "Настройки сервера settings"},
-	"Empty name not allowed!":  {
-		"en": "Empty name not allowed!",
-		"de": "Ohne Namen ist nicht erlaubt!",
-		"ru": "Пустое имя пользователя не разрешено!"
-	},
-	"Ok":                       {"en": "Ok",                        "de": "Ok",                     "ru": "Ok"},
-	"Secure(HTTPS):":           {"de": "Verschlüsselung(HTTPS):",   "ru": "Шифрование(HTTPS):"},
-	"Authentication:":          {"de": "Authentifikation:",         "ru": "Аутентификация:"},
-	"Listen on all IPs":        {"en": "Listen on all IPs",         "de": "An allen IP Adressen hören", "ru": "Открыть сокет на всех IP адресах"},
-	"help_tip":                 {
-		"en": "On save the adapter restarts with new configuration immediately",
-		"de": "Beim Speichern von Einstellungen der Adapter wird sofort neu gestartet.",
-		"ru": "Сразу после сохранения настроек драйвер перезапуститься с новыми значениями"
-	},
-	"Public certificate:":      {"en": "Public certificate:",     "de": "Publikzertifikat:",       "ru": "'Public' сертификат:"},
-	"Private certificate:":     {"en": "Private certificate:",    "de": "Privatzertifikat:",       "ru": "'Private' сертификат:"},
-	"Chained certificate:":     {"en": "Chained certificate:",    "de": "Kettenzertifikat:",       "ru": "'Chained' сертификат:"},
-	"Let's Encrypt settings":   {
-		"en": "Let's Encrypt settings",
-		"de": "Einstellungen Let's Encrypt",
-		"ru": "Настройкт Let's Encrypt"
-	},
-	"Use Lets Encrypt certificates:": {
-		"en": "Use Let's Encrypt certificates:",
-		"de": "Benutzen Let's Encrypt Zertifikate:",
-		"ru": "Использовать сертификаты Let's Encrypt:"
-	},
-	"Use this instance for automatic update:": {
-		"en": "Use this instance for automatic update:",
-		"de": "Benutze diese Instanz für automatische Updates:",
-		"ru": "Обновлять сертификаты в этом драйвере:"
-	},
-	"Port to check the domain:": {
-		"en": "Port to check the domain:",
-		"de": "Port um die Domain zu prüfen:",
-		"ru": "Порт для проверки доменного имени:"
-	},
-	"Drop the files here":  {"en": "Drop the files here",   "de": "Die Datei hier platzieren", "ru": "Перетащить файлы сюда"},
-	"Unknown file format!": {"en": "Unknown file format!",  "de": "Unbekannter Dateiformat!", "ru": "Неизвестный формат файла"},
-	"Cannot read file!":    {"en": "Cannot read file!",     "de": "Kann die Datei nicht lesen!", "ru": "Невозможно прочитать файл!"},
-	"File is too big!":     {"en": "File is too big!",      "de": "Datei ist zu groß!",     "ru": "Слишком большой файл!"}
+    "connection_info": {                             "en": "Connection settings",                             "de": "Verbindungseinstellungen",                        "ru": "Параметры подключения ",                          "pt": "Configurações de conexão",                        "nl": "Instellingen verbinding",                         "fr": "Paramètres de connexion",                         "it": "Impostazioni di connessione",                     "es": "Configuración de la conexión",                    "pl": "Ustawienia połączenia ",                          "zh-cn": "连接设置"},
+    "creation": {                                    "en": "Creation date",                                   "de": "Erstelldatum",                                    "ru": "Дата создания",                                   "pt": "Data de criação",                                 "nl": "Aanmaakdatum",                                    "fr": "Date de création",                                "it": "Data di creazione",                               "es": "Fecha de creación",                               "pl": "Data utworzenia",                                 "zh-cn": "创建日期"},
+    "delete": {                                      "en": "delete",                                          "de": "löschen",                                         "ru": "удалить",                                         "pt": "apagar",                                          "nl": "verwijderen",                                     "fr": "supprimer",                                       "it": "eliminare",                                       "es": "eliminar",                                        "pl": "usunąć",                                          "zh-cn": "删除"},
+    "description": {                                 "en": "Description",                                     "de": "Region",                                          "ru": "Описание",                                        "pt": "Descrição",                                       "nl": "Omschrijving",                                    "fr": "La description",                                  "it": "Descrizione",                                     "es": "Descripción",                                     "pl": "Opis",                                            "zh-cn": "描述"},
+    "enabled": {                                     "en": "enabled",                                         "de": "aktiviert",                                       "ru": "включен",                                         "pt": "habilitado",                                      "nl": "ingeschakeld",                                    "fr": "activé",                                          "it": "abilitato",                                       "es": "habilitado",                                      "pl": "włączony",                                        "zh-cn": "启用"},
+    "encryptionKey": {                               "en": "Encryption Key for Payload Encryption",           "de": "Schlüssel zur Payload-Verschlüsselung",           "ru": "Ключ шифрования для шифрования полезной нагрузки ", "pt": "A criptografia de Chave para Criptografia de Carga útil", "nl": "Encryptie Sleutel voor Payload Encryption",       "fr": "Clé de chiffrement pour le Chiffrement des données utiles", "it": "Chiave di crittografia per la Crittografia Payload", "es": "Clave de cifrado para la Encriptación de la Carga útil", "pl": "Klucz do szyfrowania ładunku ",                   "zh-cn": "加密钥对于有效负荷加密"},
+    "lattitude": {                                   "en": "Lattitude",                                       "de": "Breitengrad",                                     "ru": "Lattitude",                                       "pt": "Lattitude",                                       "nl": "Lattitude",                                       "fr": "Lattitude",                                       "it": "Lattitude",                                       "es": "Latitud",                                         "pl": "Szerokość geograficzna",                          "zh-cn": "纬度"},
+    "locations_info": {                              "en": "Location settings",                               "de": "Regionseinstellungen",                            "ru": "Настройки местоположения ",                       "pt": "Definições de localização",                       "nl": "Locatie-instellingen",                            "fr": "Les paramètres de localisation",                  "it": "Impostazioni di posizione",                       "es": "La configuración de ubicación",                   "pl": "Ustawienia lokalizacji ",                         "zh-cn": "位置的设置"},
+    "longitude": {                                   "en": "Longitude",                                       "de": "Längengrad",                                      "ru": "Долгота",                                         "pt": "Longitude",                                       "nl": "Lengtegraad",                                     "fr": "Longitude",                                       "it": "Longitudine",                                     "es": "Longitud",                                        "pl": "Długość geograficzna",                            "zh-cn": "经度"},
+    "mqtt": {                                        "en": "MQTT instance",                                   "de": "MQTT-Instanz",                                    "ru": "Экземпляр протоколу MQTT ",                       "pt": "DICIONÁRIO de instância",                         "nl": "MQTT exemplaar",                                  "fr": "MQTT exemple",                                    "it": "MQTT istanza",                                    "es": "MQTT instancia",                                  "pl": "Egzemplarz protokołu MQTT ",                      "zh-cn": "过实例"},
+    "name": {                                        "en": "User",                                            "de": "Benutzer",                                        "ru": "Пользователь",                                    "pt": "Utilizador",                                      "nl": "Gebruiker",                                       "fr": "L'utilisateur",                                   "it": "Utente",                                          "es": "Usuario",                                         "pl": "Użytkownik",                                      "zh-cn": "用户"},
+    "picture": {                                     "en": "Picture",                                         "de": "Avatar",                                          "ru": "Картинка",                                        "pt": "Imagem",                                          "nl": "Foto",                                            "fr": "Image",                                           "it": "Foto",                                            "es": "Imagen",                                          "pl": "Obraz",                                           "zh-cn": "图片"},
+    "pictures_info": {                               "en": "User Pictures",                                   "de": "Avatare",                                         "ru": "Фотографии Пользователя ",                        "pt": "Fotos Do Usuário",                                "nl": "Gebruikers Foto ' S",                             "fr": "L'Utilisateur Photos",                            "it": "Foto Utente",                                     "es": "Fotos De Los Usuarios",                           "pl": "Zdjęcia Użytkownika ",                            "zh-cn": "用户的照片"},
+    "radius": {                                      "en": "Radius",                                          "de": "Radius",                                          "ru": "Радиус",                                          "pt": "Raio",                                            "nl": "Straal",                                          "fr": "Rayon",                                           "it": "Raggio",                                          "es": "Radio",                                           "pl": "Promień",                                         "zh-cn": "半径"},
+    "tab_config": {                                  "en": "Configuration",                                   "de": "Konfiguration",                                   "ru": "Конфигурации",                                    "pt": "Configuração",                                    "nl": "Configuratie",                                    "fr": "Configuration",                                   "it": "Configurazione",                                  "es": "Configuración",                                   "pl": "Konfiguracji",                                    "zh-cn": "配置"},
+    "tab_info": {                                    "en": "Information",                                     "de": "Informationen",                                   "ru": "Информация",                                      "pt": "Informações",                                     "nl": "Informatie",                                      "fr": "Informations",                                    "it": "Informazioni",                                    "es": "Información",                                     "pl": "Informacje",                                      "zh-cn": "的信息"},
+    "tab_setup": {                                   "en": "Setup instructions",                              "de": "Setup-Anweisungen",                               "ru": "Инструкция по установке ",                        "pt": "Instruções de instalação",                        "nl": "Installatie-instructies",                         "fr": "Instructions d'installation",                     "it": "Istruzioni per l'installazione",                  "es": "Instrucciones de instalación",                    "pl": "Instrukcja instalacji ",                          "zh-cn": "设置说明"},
+    "togglePassword": {                              "en": "show / hide password",                            "de": "ein-/ausblenden des Schlüssels",                  "ru": "Показать / Скрыть пароль",                        "pt": "mostrar / ocultar a senha",                       "nl": "tonen / verbergen van een wachtwoord",            "fr": "afficher / masquer le mot de passe",              "it": "mostra / nascondi la password",                   "es": "mostrar / ocultar la contraseña",                 "pl": "Pokaż / Ukryj hasło",                             "zh-cn": "显示出隐藏的密码"},
+    "upload": {                                      "en": "upload",                                          "de": "hochladen",                                       "ru": "загрузить",                                       "pt": "upload",                                          "nl": "upload",                                          "fr": "télécharger",                                     "it": "caricare",                                        "es": "subir",                                           "pl": "pobierz",                                         "zh-cn": "上传"},
+    "allowClientsToDefineRegions": {                 "en": "Retrieve regions when functionality &quot;Publish Waypionts&quot; is used", "de": "Regionen aus Funktion &quot;Orte veröffentlichen&quot; beziehen", "ru": "Извлекать регионы, когда функциональность и quot;опубликовать Waypionts&quot; и используется", "pt": "Recuperar regiões quando a funcionalidade de &quot;Publicar Waypionts&quot; é usado", "nl": "Ophalen regio ' s als functionaliteit &quot;te Publiceren Waypionts&quot; wordt gebruikt", "fr": "Récupérer les régions lors de la fonctionnalité de &quot;Publier Waypionts&quot; est utilisé", "it": "Recuperare regioni in cui la funzionalità di &quot;di Pubblicare Waypionts&quot; è utilizzato", "es": "Recuperar las regiones cuando la funcionalidad de &quot;Publicar Waypionts&quot; se utiliza", "pl": "Wyodrębnić regiony, kiedy funkcjonalność i quot;opublikować Waypionts&quot; i używane", "zh-cn": "检索地区当的功能性和quot;发布Waypionts quot;使用"},
+    "allowClientsToDefineRegionsWhitelist": {        "en": "Only retrieve from whitelisted clients (empty = retrieve from all clients)", "de": "Nur von ausgewählten Clients (leer = von allen Clients beziehen)", "ru": "Только получать от клиентов в белый список (пустой = получить от всех клиентов)", "pt": "Recuperar somente a partir da lista de permissões de clientes (vazio = recuperar de todos os clientes)", "nl": "Alleen ophalen van de witte lijst clients (leeg = ophalen van alle klanten)", "fr": "Seulement récupérer à partir de la liste blanche des clients (vide = récupérer à partir de tous les clients)", "it": "Recuperare solo dalla white list clienti (vuoto = recuperare da tutti i client)", "es": "Sólo recuperar de la lista blanca de los clientes (vacío = recuperar de todos los clientes)", "pl": "Tylko otrzymywać od klienta do białej listy (pusty = dostać od wszystkich klientów)", "zh-cn": "只是检索，从已列入白名单的客户(empty=检索所有客户)"},
+    "publishRegionsToClients": {                     "en": "Broadcast regions to clients",                    "de": "Regionen an Clients verteilen",                   "ru": "Вещание регионы к клиентам",                      "pt": "Transmissão regiões de clientes",                 "nl": "Uitzending van regio ' s aan klanten",            "fr": "La diffusion des régions pour les clients",       "it": "Broadcast regioni ai clienti",                    "es": "Difusión de las regiones a los clientes",         "pl": "Nadawanie regiony do klientów",                   "zh-cn": "广播地区的客户"},
 };
